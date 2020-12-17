@@ -1,0 +1,66 @@
+.wo{
+    background-color: black;
+}
+
+.womensTitle{
+    margin: 10px;
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 4px 4px brown;
+    color: white;
+}
+
+.container{
+    /* display: flex;  */
+    justify-content: center;
+    padding: 70px;
+    /* flex-direction: row;
+    flex-wrap: wrap; */
+    
+}
+
+.turn{
+    margin: 20px;
+    font-size: 25px;
+    font-weight: bold;
+    text-shadow: 4px 4px red;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.row{
+    font-size: 20px;
+    padding-bottom: 20px;
+    color: pink;
+    font-weight: bold;
+    border: 8px double white;
+    font-family: 'Times New Roman', Times, serif;
+    
+    
+}
+
+.grid2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+img{
+    height: 250px;
+    width: 250px;
+    padding-top: 50px;
+}
+
+.pic{
+    height: 100%;
+    width: 100%;
+}
+
+.newB{
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px brown;
+    font-size: 16px;
+    border: 2px solid white;
+    padding: 5px;
+}
