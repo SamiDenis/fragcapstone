@@ -64,7 +64,10 @@ class App extends Component {
       <div className="App">
         <div>
           <BrowserRouter>
-          <Route exact path="/fragfront">
+          <Route exact path="/">
+            <Header />
+            </Route>
+            <Route exact path="/fragfront">
             <Header />
             </Route>
             <Switch>
