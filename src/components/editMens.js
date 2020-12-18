@@ -28,6 +28,8 @@ handleEdit = (e) => {
             .then((res) => res.json())
             .then((out) => alert("Your Item has been Updated !"))
     };
+
+    
     
     editHandler = (e) => {
         console.log(e.target.value)

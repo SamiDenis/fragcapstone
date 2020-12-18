@@ -17,7 +17,7 @@ handleAdd = ()=> {
             body: JSON.stringify({ image_url: this.props.pic, name: this.props.name, price: this.props.price })
         })
             .then((res) => res.json())
-            .then((out) => console.log(out));
+            .then((out) => alert("Your Item has been Added to the Basket !"))
 }
 
 

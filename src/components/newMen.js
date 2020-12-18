@@ -23,7 +23,7 @@ handleNewM = (e)=> {
             body: JSON.stringify({ image_url: this.state.image_url, name: this.state.name, price: this.state.price })
         })
             .then((res) => res.json())
-            .then((out) => console.log(out));
+            .then((out) => alert("Your Item has been Updated !"))
 }
 
 

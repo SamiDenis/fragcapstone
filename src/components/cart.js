@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-// import React from "react";
 import "./cart.css";
 import Footer from "./footer.js"
 
@@ -44,26 +43,6 @@ class Cart extends Component {
             .then((out) => this.fetchCartPerfume());
     };
 
-    // fragAll = (e) => {
-
-    //     this.setState({
-    //         perfume: e.target.value,
-    //     });
-    //     console.log(e.target.value);
-    // };
-
-    // fragUpdate = (_id, e) => {
-    //     fetch("https://fragbackend.herokuapp.com/Mens/Cart/" + _id, {
-    //         method: "PUT",
-    //         headers: {
-    //             Accept: "application/json",
-    //             "Content-Type": "application/json",
-    //         },
-    //         body: JSON.stringify({ perfume: this.state.perfume, "status": false }),
-    //     })
-    //         .then((res) => res.json())
-    //         .then((out) => this.fetchCartPerfume());
-    // };
 
     fragDelete = (_id) => {
         console.log("deleted");
@@ -77,9 +56,6 @@ class Cart extends Component {
             .then((res) => res.json())
             .then((out) => this.fetchCartPerfume());
     };
-// handleClick = () => {
-//     console.log("new")
-// }
 
 
     render() {
@@ -116,25 +92,19 @@ class Cart extends Component {
                                                 <p>{mens.name}</p>
                                                 <p>{mens.price}</p>
                                             </div>
-                                            {/* <button onClick="Men/Cart" className="editButton">EDIT</button> */}
-                                            {/* <Link to={`Mens/Cart/${mens._id}`} className="newButtonE">EDIT</Link> */}
+
                                             <Link to={`Cart/${womens._id}`} className="newButtonE">EDIT</Link>
                                             <button onClick={() => this.fragDelete(womens._id)}>DELETE</button>
-                                            {/* <button onClick={() => this.fragAdd(womens)}> NEW </button> */}
-                                        </p>
 
+                                        </p>
                                     ))
                                     : null}
-                                    
                             </div>
-                            
-
                         </div>
-
                     </div>
-                    <Footer />
-                </div>
-            </body>
+                <Footer />
+            </div>
+        </body>
         );
     }
 }

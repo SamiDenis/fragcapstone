@@ -24,8 +24,7 @@ function Header(props) {
             <a href="/Womens" className="link">
               Womens
             </a>
-           
-        
+            
             <h3>Sami Denis ©2020</h3>
       </nav>
     </div>
