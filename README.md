@@ -1,70 +1,85 @@
-# Getting Started with Create React App
+# capstone
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+***Welcome to Dream of Fragrance***
 
-## Available Scripts
+Your go to for all things fragrance
 
-In the project directory, you can run:
+Dream of Fragrance can be accessed through its main page at :( https://fragcapstone-ju9gwd0r4.vercel.app/Mens/Cart )
 
-### `npm start`
+On the main page, the user is able to "click" on one of two options: Mens or Womens. Once "clicked", the user will be able to view an array of fragrances. What the user will see is each individual fragrance's image, name, brand, type and price. Once the user decides their preferred fragrance, they are able to "click" the *ADD* button. By pressing the *ADD* button, the user is adding the selected fragrance to their cart.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+In both the Mens and Womens pages, there is a *NEW* button below their respected banners. If the user does not see a particular fragrance, they are able to create it using the *NEW* button. By pressing the button, the user will be redirecting to a page containing a form, where they can populate the fragrance name, image, and price. Once the *SUBMIT* button is "clicked" at the button, the user will get an alert that their fragrance was created. The user will be able to view their new fragrance in the page it was created in (Mens/Womens).
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Once the user has added their favored fragrances to their cart, they may view them in the Cart page. If the user decided they did not want a particular fragrance in their cart, they may be able to remove it by clicking the *DELETE* button. If the description of a particular fragrance is incorrect (such as price drop), the user is able to edit the fragrance (by name, image, or price) by "clicking" the *EDIT* button.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Frontend created using: *React.js 
 
-### `npm run build`
+Dependencies Installed:
+    npx create-react-app
+    npm run start
+    
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+The APIs used were created:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+FRAGRANCE API LINK: 
+(Mens) https://fragbackend.herokuapp.com/Mens 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+(Womens) https://fragbackend.herokuapp.com/Womens
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+API CREATED LINKS : 
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+(Mens) https://fragbackend.herokuapp/Mens 
 
-### Code Splitting
+(Womens) https://fragbackend.herokuapp/Womens
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+(Using GET) https://fragbackend.herokuapp/Mens ==> *page accessing the info for mens fragrance and their properties
 
-### Making a Progressive Web App
+(Using GET) https://fragbackend.herokuapp/Womens ==> *page accessing the info for womens fragrances and their properites
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+(Using GET) https://fragbackend.herokuapp/Mens/Womens ==> *page accessing the info for womens fragrances and their properites
 
-### Advanced Configuration
+(Using GET) https://fragbackend.herokuapp/Mens/Cart ==> *page will give info on the products [mens] in their cart
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+(Using GET) https://fragbackend.herokuapp/Womens/Cart ==> *page will give info on the products [womens] in their cart
 
-### Deployment
+(Using POST) https://fragbackend.herokuapp/Mens/Cart ==> *page will now have a form with info regarding new frangrance created
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+(Using POST) https://fragbackend.herokuapp/Womens/Cart ==> *page will now have a form with info regarding new frangrance created
 
-### `npm run build` fails to minify
+(Using POST) https://fragbackend.herokuapp/Mens ==> *page will now have a form [mens] with info regarding new frangrance created
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+(Using POST) https://fragbackend.herokuapp/Womens ==> *page will now have a form [womens] with info regarding new frangrance created
+
+(Using GET) https://fragbackend.herokuapp/Mens/Cart/:id ==> *page updating the id numbers for each individual frangrance [mens]
+
+(Using GET) https://fragbackend.herokuapp/Womens/Cart/:id ==> *page updating the id numbers for each individual frangrance [womens]
+
+(Using PUT) https://fragbackend.herokuapp/Mens/Cart/:id ==> *page updating all files containing a fragrance [mens]
+
+(Using PUT) https://fragbackend.herokuapp/Womens/Cart/:id ==> *page updating all files containing a fragrance [womens]
+
+(Using DELETE) https://fragbackend.herokuapp/Mens/Cart/:id ==> *page deleting all files specific to their id [mens]
+
+(Using DELETE) https://fragbackend.herokuapp/Womens/Cart/:id ==> *page deleting all files specific to their id [womens]
+
+
+
+Backend created using: *Node.js *Mongoose *MongoDB *CORS *Express
+
+Dependencies Installed:
+    npm init
+    npm install express
+    npm install mongoose
+    npm install cors
+
+
+Frontend and Backend information made by Samantha Denis
