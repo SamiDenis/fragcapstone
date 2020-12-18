@@ -4,7 +4,7 @@
 
 Your go to for all things fragrance
 
-Dream of Fragrance can be accessed through its main page at :( https://fragcapstone-ju9gwd0r4.vercel.app/Mens/Cart )
+Dream of Fragrance can be accessed through its main page at :( https://fragcapstone-ju9gwd0r4.vercel.app/fragfront/ )
 
 On the main page, the user is able to "click" on one of two options: Mens or Womens. Once "clicked", the user will be able to view an array of fragrances. What the user will see is each individual fragrance's image, name, brand, type and price. Once the user decides their preferred fragrance, they are able to "click" the *ADD* button. By pressing the *ADD* button, the user is adding the selected fragrance to their cart.
 
